@@ -2,13 +2,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+ <head>
   <meta charset="UTF-8">
-  <meta name="description" content="HiSheet – Excel expert services for smart spreadsheet solutions.">
+  <meta name="description" content="HiSheet – Professional Excel services for smart data handling, spreadsheet templates, and visual data solutions.">
+  <meta name="keywords" content="Excel expert, spreadsheet services, data cleaning, Excel charts, budget templates, invoice templates, HiSheet, Muhammad Hashir">
+  <meta name="author" content="Muhammad Hashir">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HiSheet – Excel Expert</title>
+  
+  <title>HiSheet – Excel Expert Services</title>
   <link rel="stylesheet" href="css/style.css">
+
+<!-- AOS Animation CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<!-- AOS CSS in <head> -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
 </head>
 <body>
+   
   <header>
     <h1>Welcome to HiSheet</h1>
     <p>Smart MS Excel Services for Businesses & Professionals</p>
@@ -21,13 +33,121 @@
   </header>
 
   <main>
-    <h2>Your Data, Organized & Beautiful</h2>
+    <h2>HiSheet: The Formula for Organized Success </h2>
     <p>I provide Excel-based services: custom templates, charts, cleanup & more.</p>
+
+    <h3>💼 About My Services</h3>
+    <p>Welcome to HiSheet — where spreadsheets become solutions!</p>
+
+<p>I’m Muhammad Hashir, a certified Excel specialist trained by Learnify Academy, and I help businesses, students, and professionals turn messy data into clean, organized, and smart spreadsheets.
+</p>
+<p>Whether you need a custom template, a data cleanup, or visually clear reports and charts — I’ve got you covered!
+</p>
+
+<h2>🎯 Why Choose Me?</h2>
+
+<li>✨ Certified from Learnify Academy</li>
+<li>✨ Clean, professional, and functional sheets</li>
+<li>✨ Strong focus on accuracy and presentation</li>
+<li>✨ Fast delivery & revision support</li>
+<li>✨ 100% confidentiality for your data</li>
+<li>✨ Friendly, client-first communication</li>
+<li>✨ Affordable pricing for quality work</li>
+
+
   </main>
 
-  <footer>
-    <p>Email: <a href="mailto:hisheet.services@gmail.com">hisheet.services@gmail.com</a></p>
-    <p>Facebook: <a href="https://www.facebook.com/share/16zS4TXJzX/">Visit Page</a></p>
-  </footer>
+
+  <!-- HISHEET Meaning Section -->
+<section class="hisheet-meaning">
+  <h2>What HISHEET Stands For</h2>
+  <ul>
+    <li data-aos="fade-up"><strong>H</strong> — Handling spreadsheets professionally 📊</li>
+    <li data-aos="fade-up" data-aos-delay="100"><strong>I</strong> — Improving your data flow 🔄</li>
+    <li data-aos="fade-up" data-aos-delay="200"><strong>S</strong> — Simplifying Excel tasks 🧮</li>
+    <li data-aos="fade-up" data-aos-delay="300"><strong>H</strong> — Highlighting insights from raw data 💡</li>
+    <li data-aos="fade-up" data-aos-delay="400"><strong>E</strong> — Editing formulas & formatting ✏️</li>
+    <li data-aos="fade-up" data-aos-delay="500"><strong>E</strong> — Evaluating spreadsheet performance 📈</li>
+    <li data-aos="fade-up" data-aos-delay="600"><strong>T</strong> — Transforming messy data into clean reports 📂</li>
+  </ul>
+</section>
+
+
+
+<!-- AOS Animation Script -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
+
+<script>
+  function openModal() {
+    document.getElementById("signinModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("signinModal").style.display = "none";
+  }
+
+  // Optional: Close when clicking outside modal
+  window.onclick = function(event) {
+    const modal = document.getElementById("signinModal");
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+<!-- AOS JS before </body> -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script><!-- AOS JS before </body> -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
 </body>
 </html>
+
+
+
+<!-- Sign-In Modal -->
+<div id="signinModal" class="modal">
+  <div class="modal-content" data-aos="zoom-in">
+    <span class="close-btn" onclick="closeModal()">×</span>
+    <h2>🔐 Sign In</h2>
+
+    <form>
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter your password" required>
+
+      <button type="submit">Sign In</button>
+    </form>
+
+    <div class="or-divider">or</div>
+
+    <div class="social-login">
+      <button class="google-btn">Sign in with Google</button>
+      <button class="facebook-btn">Sign in with Facebook</button>
+    </div>
+  </div>
+</div>
+
+<!-- Trigger Button (can be anywhere) -->
+<button onclick="openModal()" class="signin-btn">🔓 Client Sign In</button>
+
