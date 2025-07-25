@@ -169,7 +169,15 @@
   </div>
 </div>
 
+<script>  // Show popup on first load unless signed in  window.onload = function () {    const isSignedIn = localStorage.getItem("hisheetSignedIn");    if (!isSignedIn) {      document.getElementById("signin-popup").style.display = "block";    }  };
+  // Close the main popup (but keep it showing again next time)  function closePopup() {    document.getElementById("signin-popup").style.display = "none";  }
+  // Submit sign-in (demo)  function submitSignIn() {    const email = document.getElementById("userEmail").value;    const password = document.getElementById("userPassword").value;    if (email && password) {      // Save status in browser to prevent showing popup again      localStorage.setItem("hisheetSignedIn", "true");      alert("Signed in successfully (Demo Only)");      document.getElementById("signin-popup").style.display = "none";    } else {      alert("Please enter email and password.");    }  }
+  // Google and Facebook demo popups  function openGooglePopup() {    document.getElementById("google-popup").style.display = "block";  }
+  function closeGooglePopup() {    document.getElementById("google-popup").style.display = "none";  }
+  function openFacebookPopup() {    document.getElementById("facebook-popup").style.display = "block";  }
+  function closeFacebookPopup() {    document.getElementById("facebook-popup").style.display = "none";  }</script>
 
+  
   
 </body>
 </html>
