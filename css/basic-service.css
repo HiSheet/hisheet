@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Basic Spreadsheet Tasks – HiSheet</title>
@@ -42,6 +45,14 @@
     <h3>💡 Why It’s Important</h3>
     <p>Often, users have good data—but poor structure. Clean, professional spreadsheets help communicate better, impress clients, and stay productive.</p>
   </section>
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
 
 </body>
 </html>
