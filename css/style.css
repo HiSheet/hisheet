@@ -291,4 +291,9 @@ footer {
 }
 
 
+a:hover h3 {
+  color: #007a58;
+  text-decoration: underline;
+}
+
 
