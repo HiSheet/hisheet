@@ -232,38 +232,8 @@ footer {
   color: #888;
 }
 
-/* Social Buttons */
-.social-login button {
-  display: block;
-  width: 90%;
-  padding: 10px;
-  margin: 6px auto;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-}
 
-.google-btn {
-  background-color: #db4437;
-  color: white;
-}
 
-.facebook-btn {
-  background-color: #4267B2;
-  color: white;
-}
-
-/* Trigger Button */
-.signin-btn {
-  background-color: #006b4c;
-  color: white;
-  padding: 10px 18px;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-  margin: 20px;
-}
 
 .about-container {
   max-width: 850px;
