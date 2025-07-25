@@ -139,91 +139,13 @@
     once: true
   });
 </script>
-<!-- 🔒 Sign In Popup -->
-<div id="signin-popup" class="popup">
-  <div class="popup-content">
-    <span class="close-btn" onclick="closePopup()">❌</span>
-    <h2>Sign In to HiSheet</h2>
-    <input type="email" id="userEmail" placeholder="Email address" required>
-    <input type="password" id="userPassword" placeholder="Password" required>
-    <button onclick="submitSignIn()">Sign In</button>
-    <hr>
-    <button onclick="openGooglePopup()">Sign in with Google</button>
-    <button onclick="openFacebookPopup()">Sign in with Facebook</button>
-  </div>
-</div>
 
-<!-- Google Sign-In Popup -->
-<div id="google-popup" class="popup">
-  <div class="popup-content">
-    <span class="close-btn" onclick="closeGooglePopup()">❌</span>
-    <h3>Google Sign-In</h3>
-    <p>This is a demo popup. (Real Google Sign-In coming soon!)</p>
-  </div>
-</div>
 
-<!-- Facebook Sign-In Popup -->
-<div id="facebook-popup" class="popup">
-  <div class="popup-content">
-    <span class="close-btn" onclick="closeFacebookPopup()">❌</span>
-    <h3>Facebook Sign-In</h3>
-    <p>This is a demo popup. (Real Facebook Sign-In coming soon!)</p>
-  </div>
-</div>
-
-<script>  // Show popup on first load unless signed in  window.onload = function () {    const isSignedIn = localStorage.getItem("hisheetSignedIn");    if (!isSignedIn) {      document.getElementById("signin-popup").style.display = "block";    }  };
-  // Close the main popup (but keep it showing again next time)  function closePopup() {    document.getElementById("signin-popup").style.display = "none";  }
-  // Submit sign-in (demo)  function submitSignIn() {    const email = document.getElementById("userEmail").value;    const password = document.getElementById("userPassword").value;    if (email && password) {      // Save status in browser to prevent showing popup again      localStorage.setItem("hisheetSignedIn", "true");      alert("Signed in successfully (Demo Only)");      document.getElementById("signin-popup").style.display = "none";    } else {      alert("Please enter email and password.");    }  }
-  // Google and Facebook demo popups  function openGooglePopup() {    document.getElementById("google-popup").style.display = "block";  }
-  function closeGooglePopup() {    document.getElementById("google-popup").style.display = "none";  }
-  function openFacebookPopup() {    document.getElementById("facebook-popup").style.display = "block";  }
-  function closeFacebookPopup() {    document.getElementById("facebook-popup").style.display = "none";  }</script>
-
-  
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script><script>  AOS.init({ duration: 800, once: true });
-  window.onload = function () {    const isSignedIn = localStorage.getItem("hisheetSignedIn");    if (!isSignedIn) {      document.getElementById("signin-popup").style.display = "block";    }  };
-  function closePopup() {    document.getElementById("signin-popup").style.display = "none";  }
-  function submitSignIn() {    const email = document.getElementById("userEmail").value;    const password = document.getElementById("userPassword").value;    if (email && password) {      localStorage.setItem("hisheetSignedIn", "true");      alert("Signed in successfully (Demo Only)");      document.getElementById("signin-popup").style.display = "none";    } else {      alert("Please enter email and password.");    }  }
-  function openGooglePopup() {    document.getElementById("google-popup").style.display = "block";  }
-  function closeGooglePopup() {    document.getElementById("google-popup").style.display = "none";  }
-  function openFacebookPopup() {    document.getElementById("facebook-popup").style.display = "block";  }
-  function closeFacebookPopup() {    document.getElementById("facebook-popup").style.display = "none";  }</script>
+ 
 
 
 
 
-
-  <!-- 🔒 Sign In Popup -->
-<div id="signin-popup" class="popup">
-  <div class="popup-content">
-    <span class="close-btn" onclick="closePopup()">❌</span>
-    <h2>Sign In to HiSheet</h2>
-    <input type="email" id="userEmail" placeholder="Email address" required>
-    <input type="password" id="userPassword" placeholder="Password" required>
-    <button onclick="submitSignIn()">Sign In</button>
-    <hr>
-    <button onclick="openGooglePopup()">Sign in with Google</button>
-    <button onclick="openFacebookPopup()">Sign in with Facebook</button>
-  </div>
-</div>
-
-<!-- 🔵 Google Sign-In Popup -->
-<div id="google-popup" class="popup">
-  <div class="popup-content">
-    <span class="close-btn" onclick="closeGooglePopup()">❌</span>
-    <h3>Google Sign-In</h3>
-    <p>This is a demo popup. (Real Google Sign-In coming soon!)</p>
-  </div>
-</div>
-
-<!-- 🔵 Facebook Sign-In Popup -->
-<div id="facebook-popup" class="popup">
-  <div class="popup-content">
-    <span class="close-btn" onclick="closeFacebookPopup()">❌</span>
-    <h3>Facebook Sign-In</h3>
-    <p>This is a demo popup. (Real Facebook Sign-In coming soon!)</p>
-  </div>
-</div>
 </body>
 </html>
 
